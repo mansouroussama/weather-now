@@ -1,19 +1,11 @@
 {
   "files": {
-    "main.css": "/weather-now/static/css/main.b49daa49.css",
-    "main.js": "/weather-now/static/js/main.2a8a02de.js",
-    "static/media/Snow.svg": "/weather-now/static/media/Snow.1a620470b9ac94a19e14d2b733f43f95.svg",
-    "static/media/Partly Cloudy.svg": "/weather-now/static/media/Partly Cloudy.6f619d9eabbb8391e4de38a860a29a5f.svg",
+    "main.css": "/weather-now/static/css/main.e9ec3e09.css",
+    "main.js": "/weather-now/static/js/main.784d5893.js",
     "static/media/windIcon.svg": "/weather-now/static/media/windIcon.274b29e10c85a079c76f37a7ed72d449.svg",
     "static/media/windDirectionIcon.svg": "/weather-now/static/media/windDirectionIcon.181e8b1f051a2f1ff34d8fe289443e57.svg",
     "static/media/feelsLikeIcon.svg": "/weather-now/static/media/feelsLikeIcon.5bbe1b2c7bb6d76eb1403aeb10345bcf.svg",
-    "static/media/Clear Sky.svg": "/weather-now/static/media/Clear Sky.c1a90ca31856ebe609816bec18431d17.svg",
-    "static/media/Rain Showers.svg": "/weather-now/static/media/Rain Showers.85ba6a72f6b72ffb56cbf63f2f6e723f.svg",
-    "static/media/Foggy.svg": "/weather-now/static/media/Foggy.950c2dd0438a9ee168ab0ebef918078b.svg",
-    "static/media/Rain.svg": "/weather-now/static/media/Rain.c3ccd2496d6ed92abb86d04f10e2e19b.svg",
     "static/media/rainIcon.svg": "/weather-now/static/media/rainIcon.52f1ca5dce5dd377b0c825f05b8fa338.svg",
-    "static/media/Thunderstorm.svg": "/weather-now/static/media/Thunderstorm.016c2ed35e8f3eb0d74d86ab25cf790d.svg",
-    "static/media/Drizzle.svg": "/weather-now/static/media/Drizzle.b7a8ad70a4415956fda896363d186310.svg",
     "static/media/humidityIcon.svg": "/weather-now/static/media/humidityIcon.55b45253875b4bb03ea221058c26c021.svg",
     "static/media/current-location.svg": "/weather-now/static/media/current-location.3bf816c03609286e1ab57dfa38802226.svg",
     "index.html": "/weather-now/index.html",
@@ -21,11 +13,11 @@
     "static/media/search-icon.svg": "/weather-now/static/media/search-icon.c6915b8a2ebaa82bea41cc7a451e4467.svg",
     "static/media/visibilityIcon.svg": "/weather-now/static/media/visibilityIcon.8ad385dca888cd7365b8f2ab42b1628d.svg",
     "static/media/precipitationIcon.svg": "/weather-now/static/media/precipitationIcon.d0fd7e66813d4acb8131badd99b82628.svg",
-    "main.b49daa49.css.map": "/weather-now/static/css/main.b49daa49.css.map",
-    "main.2a8a02de.js.map": "/weather-now/static/js/main.2a8a02de.js.map"
+    "main.e9ec3e09.css.map": "/weather-now/static/css/main.e9ec3e09.css.map",
+    "main.784d5893.js.map": "/weather-now/static/js/main.784d5893.js.map"
   },
   "entrypoints": [
-    "static/css/main.b49daa49.css",
-    "static/js/main.2a8a02de.js"
+    "static/css/main.e9ec3e09.css",
+    "static/js/main.784d5893.js"
   ]
 }
