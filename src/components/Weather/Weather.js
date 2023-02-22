@@ -11,15 +11,13 @@ const Weather = () => {
    console.log(ctx);
    
    return (
-      <div className="px-8 py-6 flex flex-1 gap-8">
-         <div className="flex flex-col gap-6">
+      <div className="px-8 py-6 flex flex-col flex-1 gap-8">
+         <div className="flex gap-8">
             <Summary data={summary}/>
             <Hourly data={hourly}/>
          </div>
-         <div className="flex flex-col justify-between">
-            <Info data={info}/>
-            <Daily data={daily}/>
-         </div>
+         <Info data={info}/>
+         <Daily data={daily}/>
       </div>
    )
 }

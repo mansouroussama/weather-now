@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext, Fragment } from 'react';
+import { useState, useEffect, useContext, useCallback, Fragment } from 'react';
 import Context from './context/Context';
 import { API_KEY, REVERSE_GEO_API_URL, WEATHER_API_URL} from './utilities/Config';
 import { Player } from '@lottiefiles/react-lottie-player';
@@ -15,7 +15,7 @@ const App = () => {
 	console.log(pageLoaded)
 
 	const curPosHandler = async () => {
-		const requestPosition = async() =>{
+		const requestPosition = async() => {
 			return new Promise(function(resolve, reject) {
 			navigator.geolocation.getCurrentPosition(
 				pos => { resolve(pos.coords); }, 
@@ -65,11 +65,11 @@ const App = () => {
 				visibility: formatNum(data.hourly.relativehumidity_2m[12]),
 				dew_point: formatNum(data.hourly.dewpoint_2m[12]),
 			},
-			hourly: data.hourly.time.filter((_, i) => [0, 4, 8, 12, 16, 20].includes(i)).map((time, i) => {
+			hourly: data.hourly.time.slice(0, 49).map((time, i) => {
 				const date = new Date(time * 1000).toLocaleTimeString('en-US', { hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
 				const weathercode = data.hourly.weathercode[i];
 				const temperature = data.hourly.apparent_temperature[i];
-				return [date, formatNum(temperature), weathercode]
+				return [date, temperature, weathercode]
 			}),
 			daily: data.daily.time.map((el, i) => {
 				const day = new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(new Date(data.daily.time[i] * 1000));
@@ -85,7 +85,6 @@ const App = () => {
 		const fn = async() => {
 			await curPosHandler();
 			setPageLoaded(true);
-			console.log(pageLoaded)
 		}
 		fn();
 	}, [])
